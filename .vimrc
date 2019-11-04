@@ -28,6 +28,8 @@ if exists('+termguicolors')
 endif
 
 colorscheme molokai
+" syntax doesn' t default to ON on all systems
+syntax on
 
 imap kj <Esc>
 imap jk <Esc>
@@ -73,5 +75,8 @@ au InsertEnter * let updaterestore=&updatetime | set updatetime=4200
 au InsertLeave * let &updatetime=updaterestore
 " automatically leave insert mode after 'updatetime' milliseconds of inaction
 au CursorHoldI * stopinsert
+
+" I have been trying to live without this, but I am nut sure I can
+set backspace=indent,eol,start
 
 
