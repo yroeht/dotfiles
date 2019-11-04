@@ -1,4 +1,7 @@
 #!/bin/sh
-ln -s .vim ~/.vim
-ln -s .vimrc ~/.vimrc
-ln -s .tmux.conf ~/.tmux.conf
+BASEDIR=$(dirname "$0")
+set -x
+ln -s ${BASEDIR}/.vim ~/.vim
+ln -s ${BASEDIR}/.vimrc ~/.vimrc
+ln -s ${BASEDIR}/.tmux.conf ~/.tmux.conf
+ln -s ${BASEDIR}/.zshrc ~/.zshrc
