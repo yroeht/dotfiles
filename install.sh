@@ -1,5 +1,5 @@
 #!/bin/sh
-BASEDIR=$(dirname "$0")
+BASEDIR=$(dirname $(readlink -f "$0"))
 set -x
 ln -s ${BASEDIR}/.vim ~/.vim
 ln -s ${BASEDIR}/.vimrc ~/.vimrc
