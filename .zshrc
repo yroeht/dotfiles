@@ -44,6 +44,13 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
+bindkey "^A" vi-beginning-of-line
+bindkey "^E" vi-end-of-line
+
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.cache/zsh/history
+
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 # This must be at the end oh .zshrc
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
