@@ -1,8 +1,8 @@
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
-export EDITOR=/usr/local/bin/vim
-export VISUAL=/usr/local/bin/vim
+export EDITOR=vim
+export VISUAL=vim
 
 export TTY='%F{magenta}%y%f'
 export WHER='%F{yellow}%m%f'
@@ -13,8 +13,8 @@ export PR='%B%F{white}%#%f%b'
 export PROMPT="${TTY} ${WHER} ${ERR}$PWD $PR "
 export RPROMPT="${DATE}"
 
-alias ls="colorls -G"
-export TERM=st-256color
+[ $(uname) = 'OpenBSD' ] && alias ls="colorls -G"
+[ $(uname) = 'OpenBSD' ] && export TERM=st-256color
 
 export LESS_TERMCAP_mb=$'\e[01;31m'       # begin blinking
 export LESS_TERMCAP_md=$'\e[01;38;5;74m'  # begin bold
