@@ -9,7 +9,7 @@ export WHER='%F{yellow}%m%f'
 export ERR='%(?..%F{red}%? %f)'
 export PWD='%F{yellow}%1~%f'
 #export DATE='%F{blue}%*%f'
-export PR='%B%F{white}%#%f%b'
+export PR='%B%F{white}%(!.#.$)%f%b'
 export PROMPT="${TTY} ${WHER} ${ERR}$PWD $PR "
 #export RPROMPT="${DATE}"
 
