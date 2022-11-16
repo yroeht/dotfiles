@@ -24,8 +24,9 @@ export LESS_TERMCAP_so=$'\e[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\e[0m'           # end underline
 export LESS_TERMCAP_us=$'\e[04;38;5;146m' # begin underline
 
-export PAGER="most"
+export PAGER="less"
 
+alias ls="ls --color=auto"
 alias e=vim
 alias vi=vim
 alias v=vim
