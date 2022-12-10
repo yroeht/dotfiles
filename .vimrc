@@ -31,10 +31,6 @@ colorscheme molokai
 " syntax doesn' t default to ON on all systems
 syntax on
 
-imap kj <Esc>
-imap jk <Esc>
-imap ii <Esc>
-
 filetype plugin indent on
 " Good for aligning stuff
 set copyindent
